@@ -10,7 +10,7 @@ private:
 
 public:
     // Constructor
-    LugarEstacionamiento(std::string lugar = "UNDF", std::string patente = "UNDF", bool ocupado = false)
+    LugarEstacionamiento(std::string lugar = "NULL", std::string patente = "NULL", bool ocupado = false)
     {
         this->patente = patente;
         this->patente = patente;
@@ -53,4 +53,3 @@ public:
         return ocupado;
     }
 };
-;
