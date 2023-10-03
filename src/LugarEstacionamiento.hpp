@@ -5,12 +5,12 @@ class LugarEstacionamiento
 {
 private:
     std::string lugar;
-    int patente;
+    std::string patente;
     bool ocupado;
 
 public:
     // Constructor
-    LugarEstacionamiento(std::string lugar = "UNDF", int patente = 999, bool ocupado = false)
+    LugarEstacionamiento(std::string lugar = "UNDF", std::string patente = "UNDF", bool ocupado = false)
     {
         this->patente = patente;
         this->patente = patente;
@@ -30,13 +30,13 @@ public:
     }
 
     // Setter para Patente
-    void setPatente(int patente)
+    void setPatente(std::string patente)
     {
         this->patente = patente;
     }
 
     // Getter para Patente
-    int getPatente() const
+    std::string getPatente() const
     {
         return patente;
     }
