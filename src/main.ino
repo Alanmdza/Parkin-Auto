@@ -68,8 +68,8 @@ void sendJson()
   {
     JsonObject lugarJson = lugares.createNestedObject(listaDeLugares[j].getlugar());
 
-    lugarJson["Patente"] = listaDeLugares[j].getPatente();
-    lugarJson["Ocupado"] = listaDeLugares[j].estaOcupado();
+    lugarJson["patente"] = listaDeLugares[j].getPatente();
+    lugarJson["ocupado"] = listaDeLugares[j].estaOcupado();
   }
 
   // Convertir el objeto JSON en una cadena
